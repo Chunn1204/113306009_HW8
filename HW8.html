@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="HW8.css">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>HW8</title>
+</head>
+<body>
+<div class="calculator">
+        <h1>JS Calculator</h1>
+        <label for="number1">Number 1</label>
+        <input type="number" id="number1" placeholder="Enter first number">
+        <label for="number2">Number 2</label>
+        <input type="number" id="number2" placeholder="Enter second number">
+        <label for="operator">Operate way?</label>
+        <select id="operator" onchange="updateButtonText()">
+            <option value="+">+</option>
+            <option value="-">-</option>
+            <option value="*">*</option>
+            <option value="/">/</option>
+        </select>
+        <button id="calculateButton" onclick="calculate()">Add</button>
+        <div id="result" class="result">Result = </div>
+    </div>
+    <script src="HW8.js" charset="utf-8"></script>
+</body>
+</html>
